@@ -1,0 +1,26 @@
+// footer styling
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: "Almarai";
+  position: absolute;
+  background-color: black;
+  color: white;
+  margin-top: 64px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+//

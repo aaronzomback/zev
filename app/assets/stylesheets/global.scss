@@ -1,6 +1,20 @@
 
+@import "subjects";
+@import "footer";
+
+
+body {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
 header {
   font-family: "Almarai";
+
+  h1 {
+    font-size: 56px;
+  }
 
   nav {
     margin-left: 80px;
@@ -10,8 +24,34 @@ header {
     align-items: center;
   }
 
-  span {
-    margin-right: 48px;
+  a {
+    margin-right: 56px;
     text-transform: uppercase;
+  }
+
+  span {
+    margin-right: 56px;
+    text-transform: uppercase;
+  }
+
+  div.contact-box {
+    border: 1px solid black;
+    margin-right: 0;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.6s;
+
+    a {
+      margin-right: 0;
+      color: black;
+    }
+
+    &:hover {
+      background-color: black;
+      a {
+        color: white;
+      }
+    }
   }
 }
