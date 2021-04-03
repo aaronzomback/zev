@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
 
-  resources :contacts, only: [:new, :create]
+
+      resources :contacts, only: [:new, :create]
 
   get "pricing", to: "pages#pricing"
   get "testimonials", to: "pages#testimonials"

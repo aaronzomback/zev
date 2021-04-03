@@ -1,0 +1,41 @@
+
+
+input, textarea {
+  border: 1px solid black;
+  margin-bottom: 24px;
+  padding: 8px 0;
+  min-width: 300px;
+  margin-left: 4rem;
+}
+
+form {
+  margin-top: 64px;
+  font-family: "Roboto";
+  margin-left: 10rem;
+}
+
+div.name-flex {
+  display: flex;
+
+}
+
+
+input[type=submit] {
+  background: black;
+  color: white;
+  border-color: black;
+  // margin-top: 16px;
+  margin-left: 0px;
+  border-radius: 2px;
+  padding: 16px 24px;
+  width: 360px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow:  inset 12px 4px 0 black;
+}
+
+label {
+  margin-bottom: 8px;
+  margin-left: 4rem;
+  display: block;
+}

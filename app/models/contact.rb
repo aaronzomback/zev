@@ -1,7 +1,10 @@
 class Contact < ApplicationRecord
 
-  has_many :subjects
-  has_many :grades
+  # has_many :subjects
+  # has_many :grades
+  #
+  # accepts_nested_attributes_for :subjects
+  # accepts_nested_attributes_for :grades
 
   # SUBJECTS = ['SAT', 'ACT']
   # attr_accessor :subject
