@@ -8,6 +8,31 @@ ActiveAdmin.register Contact do
   permit_params :first_name, :last_name, :email, :phone, :message, :subject, :grade
 
 
+  index do
+ selectable_column
+ index_column
+ column :first_name
+ column :last_name
+ column :email
+ column :phone
+ column :subject
+ column :grade
+ column :message
+ actions
+end
+
+show do
+  attributes_table do
+  row :first_name
+  row :last_name
+  row :email
+  row :phone
+  row :subject
+  row :grade
+  row :message
+  end
+end
+
   form do |f|
      f.inputs 'Contact' do
        f.input :first_name

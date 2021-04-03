@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zev</title>
+    <title>Zev Fagin, Tutor</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,13 +12,13 @@
   <header>
     <nav>
       <%= link_to root_path do %>
-      <h1 style="text-transform: none;">Zev Aaron</h1>
+      <h1 style="text-transform: none;">Zev Fagin</h1>
       <% end %>
       <div class="">
-        <span>About</span>
+        <%= link_to "About", about_path %>
         <%= link_to "Subjects", subjects_path %>
-        <span>Testimonials</span>
-        <span>Pricing</span>
+        <%= link_to "Testimonials", testimonials_path %>
+        <%= link_to "Pricing", pricing_path %>
         <div class="contact-box"><%= link_to "Contact", new_contact_path %></div>
       </div>
     </nav>
