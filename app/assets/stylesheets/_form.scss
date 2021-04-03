@@ -3,9 +3,16 @@
 input, textarea {
   border: 1px solid black;
   margin-bottom: 24px;
-  padding: 8px 0;
+  padding: 12px;
   min-width: 300px;
   margin-left: 4rem;
+  padding-left: 16px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none !important;
+    border: 2px solid black;
+  }
 }
 
 form {
@@ -16,7 +23,6 @@ form {
 
 div.name-flex {
   display: flex;
-
 }
 
 

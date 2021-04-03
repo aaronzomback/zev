@@ -18,4 +18,8 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def thank_you
+    render :layout => "sent"
+  end
+
 end

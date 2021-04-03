@@ -14,12 +14,15 @@
       <%= link_to root_path do %>
       <h1 style="text-transform: none;">Zev Fagin</h1>
       <% end %>
-      <div class="">
-        <%= link_to "About", about_path %>
-        <%= link_to "Subjects", subjects_path %>
-        <%= link_to "Testimonials", testimonials_path %>
-        <%= link_to "Pricing", pricing_path %>
-        <div class="contact-box"><%= link_to "Contact", new_contact_path %></div>
+        <div class="">
+          <%= link_to "About", about_path %>
+          <%= link_to "Subjects", subjects_path %>
+          <%= link_to "Testimonials", testimonials_path %>
+          <%= link_to "Pricing", pricing_path %>
+          <div class="inline-flex">
+            <div class="" style="padding-bottom: 12px; text-align: center;">(646)474-0878</div>
+            <div class="contact-box" onclick="toggle();"><%= link_to "Contact", contact_path %></div>
+          </div>
       </div>
     </nav>
   </header>
@@ -29,6 +32,10 @@
       <div id="content-wrap">
 
         <main>
+          <div class="popUp" id="popUpContact">
+              <!-- <span class="close" onclick="toggle();">Close</span> -->
+              
+          </div>
         <%= yield %>
         </main>
 
@@ -39,6 +46,13 @@
     </footer>
   </div>
   </div>
+
+      <script type="text/javascript">
+                  function toggle() {
+                  var popup= document.querySelector(".popUp")
+                  popup.classList.toggle("active")
+                }
+      </script>
   </body>
 
 </html>

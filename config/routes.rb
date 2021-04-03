@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   get "subjects", to: "pages#subjects"
+  get "thank_you", to: "pages#thank_you"
   root "pages#home"
 
 end

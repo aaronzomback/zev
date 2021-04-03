@@ -1,6 +1,8 @@
 
 @import "subjects";
 @import "form";
+@import "contact";
+@import "thanks";
 @import "footer";
 
 
@@ -12,6 +14,7 @@ body {
 }
 header {
   font-family: "Almarai";
+
 
   h1 {
     font-size: 56px;
@@ -35,8 +38,13 @@ header {
     text-transform: uppercase;
   }
 
+  div.inline-flex {
+    display: inline-block;
+  }
+
   div.contact-box {
     border: 1px solid black;
+    background-color: black;
     margin-right: 0;
     padding: 8px 16px;
     text-align: center;
@@ -45,7 +53,7 @@ header {
 
     a {
       margin-right: 0;
-      color: black;
+      color: white;
     }
 
     &:hover {
@@ -56,3 +64,34 @@ header {
     }
   }
 }
+
+
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgba(4, 11, 17, 0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  .close {
+
+     position: absolute;
+     top: 50px;
+     right: 195px;
+     cursor: pointer;
+   }
+ }
