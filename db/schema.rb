@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_03_140701) do
+ActiveRecord::Schema.define(version: 2021_04_05_165529) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -46,17 +46,6 @@ ActiveRecord::Schema.define(version: 2021_04_03_140701) do
     t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "subject_id"
-    t.integer "grade_id"
-    t.string "subject"
-    t.string "grade"
-    t.boolean "ACT"
-    t.boolean "SAT"
-    t.boolean "Math"
-    t.boolean "Philosophy"
-    t.boolean "English"
-    t.boolean "History"
-    t.boolean "College_Essay"
   end
 
   create_table "grades", force: :cascade do |t|

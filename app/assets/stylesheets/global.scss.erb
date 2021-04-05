@@ -11,9 +11,21 @@ body {
     text-decoration: none;
     color: black;
   }
+  background-image: url(asset_path('nyc.jpg'));
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+div.nyc {
+ .nyc-photo {
+   display: block;
+   width: 60%;
+ }
+}
+
 header {
   font-family: "Almarai";
+  align-items: center;
 
 
   h1 {
@@ -21,11 +33,15 @@ header {
   }
 
   nav {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 160px;
+    margin-right: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    div.nav-links {
+      // font-size: 21px;
+    }
   }
 
   a {
@@ -57,10 +73,7 @@ header {
     }
 
     &:hover {
-      background-color: black;
-      a {
-        color: white;
-      }
+      // opacity: 0.6;
     }
   }
 }

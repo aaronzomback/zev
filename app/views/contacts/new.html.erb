@@ -1,26 +1,18 @@
 
 
-<section>
-  <%= simple_form_for @contact do |f| %>
+
+
+<section class="contact-form">
+  <h1>Take your first step towards unlocking your academic potential!</h1>
+      <%= simple_form_for @contact do |f| %>
     <div class="name-flex">
-      <%= f.input :first_name %>
-      <%= f.input :last_name %>
+      <%= f.input :first_name  %>
+      <%= f.input :last_name, label: "Last name (optional)"  %>
       </div>
       <%= f.input :email %>
       <%= f.input :phone, label: "Phone (optional)" %>
 
-      Subjects
-
-      <%= f.input :ACT, label: "SAT" %>
-      <%= f.input :SAT, label: "ACT" %>
-      <%= f.input :Math, label: "Math" %>
-      <%= f.input :English, label: "English" %>
-      <%= f.input :College_Essay, label: "College Essay" %>
-      <%= f.input :History, label: "History" %>
-      <%= f.input :Philosophy, label: "Philosophy" %>
-
       <%= f.input :message, label: "Message (optional)" %>
       <%= f.button :submit, "Submit" %>
     <% end %>
-
   </section>

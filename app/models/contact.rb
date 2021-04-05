@@ -1,16 +1,7 @@
 class Contact < ApplicationRecord
 
-  # has_many :subjects
-  # has_many :grades
-  #
-  # accepts_nested_attributes_for :subjects
-  # accepts_nested_attributes_for :grades
 
-  # SUBJECTS = ['SAT', 'ACT']
-  # attr_accessor :subject
-
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :email, presence: true
+  validates :first_name, :presence => {:message => "Please include your first name." }
+  validates :email, :presence => {:message => "Please include your email address." }, format: { with: URI::MailTo::EMAIL_REGEXP, :message => "Invalid email - make sure the format is correct." }
 
 end

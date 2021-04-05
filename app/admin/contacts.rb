@@ -5,7 +5,7 @@ ActiveAdmin.register Contact do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :first_name, :last_name, :email, :phone, :message, :ACT, :SAT, :math, :history, :college_essay, :english, :philosophy
+  permit_params :first_name, :last_name, :email, :phone, :message
 
 
   index do
@@ -15,8 +15,6 @@ ActiveAdmin.register Contact do
  column :last_name
  column :email
  column :phone
- column :SAT
- column :ACT
  column :message
  actions
 end
@@ -27,11 +25,6 @@ show do
   row :last_name
   row :email
   row :phone
-  row :math
-  row :history
-  row :ACT
-  row :SAT
-  row :grade
   row :message
   end
 end
@@ -42,8 +35,6 @@ end
        f.input :last_name
        f.input :email
        f.input :phone
-       f.input :subject
-       f.input :grade
        f.input :message
      end
       f.actions
