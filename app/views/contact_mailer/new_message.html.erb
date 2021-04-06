@@ -1,17 +1,17 @@
 
 <p>We received a new message from
   <%= @contact.first_name %>
-   <% if @contact.last_name.present %>
+   <% if @contact.last_name.present? %>
    <%= @contact.last_name %>
    <% end %>.
  </p>
 
  <p>Here is the complete info they've sent: <br>
-    <%= @contact.first_name %> <br>
-    <%= @contact.last_name %> <br>
-    <%= @contact.email %> <br>
-    <%= @contact.phone %> <br>
-    <%= @contact.message %>
+    <u>First name</u>: <%= @contact.first_name %> <br>
+    <u>Last name</u>: <%= @contact.last_name %> <br>
+    <u>Email</u>: <%= @contact.email %> <br>
+    <u>Phone</u>: <%= @contact.phone %> <br>
+    <u>Message</u>: <%= @contact.message %>
  </p>
 
 <p>Let's follow up as soon as possible!</p>
