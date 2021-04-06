@@ -8,6 +8,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(form_params)
 
     if @contact.save
+      ContactMailer.greeting(@contact).deliver_now
+      ContactMailer.new_message(@contact).deliver_now
       redirect_to thank_you_path
     else
       render 'new'
